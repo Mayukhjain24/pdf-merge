@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Editor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Add any additional CSS styles here if needed */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>PDF Editor</h1>
+        </header>
+        <main>
+            <div class="upload-area">
+                <input type="file" id="pdfUpload" accept="application/pdf" multiple>
+                <button id="uploadBtn">Upload PDFs</button>
+            </div>
+            <div class="file-list" id="fileList">
+                <!-- File list will be dynamically populated -->
+            </div>
+            <button id="mergeBtn">Merge PDFs</button>
+            <button id="downloadBtn" style="display: none;">Download Merged PDF</button>
+            <div id="previewArea" style="margin-top: 20px;"></div>
+        </main>
+    </div>
+    <!-- Include the PDFLib and PDF.js libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <script src="js/script.js"></script>
+    
+
+    <footer>
+        <p>Developed By <a href="https://mayukhjain.info" target="_blank" rel="noopener noreferrer">Mayukh Jain</a></p>
+    </footer>
+</body>
+
+</html>

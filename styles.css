@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1e;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #2c2c2e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #e0e0e0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.upload-area {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+}
+
+.file-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+}
+
+.file-item {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: move;
+}
+
+.file-item span {
+  margin-left: 10px;
+}
+
+#previewArea {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+}
+
+#previewArea canvas {
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4a16d8c4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #210963f3;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .file-item {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .upload-area {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .file-list {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #previewArea {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #ccc;
+  /* Lighter color for footer text */
+}
+
+footer a {
+  color: #007bff;
+  /* Blue color for links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
